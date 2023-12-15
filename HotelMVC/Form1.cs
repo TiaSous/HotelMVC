@@ -16,5 +16,11 @@ namespace HotelMVC
         {
             InitializeComponent();
         }
+
+        private void EnregistrerValue_Click(object sender, EventArgs e)
+        {
+            Booking booking = new Booking();
+        }
+
     }
 }

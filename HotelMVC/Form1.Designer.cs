@@ -33,20 +33,21 @@
             this.DateTXT = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.NombreNuitValue = new System.Windows.Forms.TextBox();
             this.EnregistrerValue = new System.Windows.Forms.Button();
+            this.NombreDeNuitValue = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // DateTimeValue
             // 
-            this.DateTimeValue.Location = new System.Drawing.Point(161, 139);
+            this.DateTimeValue.Location = new System.Drawing.Point(163, 100);
             this.DateTimeValue.Name = "DateTimeValue";
             this.DateTimeValue.Size = new System.Drawing.Size(200, 22);
             this.DateTimeValue.TabIndex = 0;
             // 
             // RemarqueValue
             // 
-            this.RemarqueValue.Location = new System.Drawing.Point(161, 247);
+            this.RemarqueValue.Location = new System.Drawing.Point(163, 208);
             this.RemarqueValue.Name = "RemarqueValue";
             this.RemarqueValue.Size = new System.Drawing.Size(169, 22);
             this.RemarqueValue.TabIndex = 2;
@@ -54,7 +55,7 @@
             // DateTXT
             // 
             this.DateTXT.AutoSize = true;
-            this.DateTXT.Location = new System.Drawing.Point(24, 139);
+            this.DateTXT.Location = new System.Drawing.Point(26, 100);
             this.DateTXT.Name = "DateTXT";
             this.DateTXT.Size = new System.Drawing.Size(98, 16);
             this.DateTXT.TabIndex = 3;
@@ -63,7 +64,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 247);
+            this.label2.Location = new System.Drawing.Point(26, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 16);
             this.label2.TabIndex = 4;
@@ -72,35 +73,46 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 194);
+            this.label3.Location = new System.Drawing.Point(26, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Nombre de nuit :";
             // 
-            // NombreNuitValue
-            // 
-            this.NombreNuitValue.Location = new System.Drawing.Point(161, 194);
-            this.NombreNuitValue.Name = "NombreNuitValue";
-            this.NombreNuitValue.Size = new System.Drawing.Size(100, 22);
-            this.NombreNuitValue.TabIndex = 6;
-            // 
             // EnregistrerValue
             // 
-            this.EnregistrerValue.Location = new System.Drawing.Point(291, 327);
+            this.EnregistrerValue.Location = new System.Drawing.Point(372, 286);
             this.EnregistrerValue.Name = "EnregistrerValue";
             this.EnregistrerValue.Size = new System.Drawing.Size(105, 35);
             this.EnregistrerValue.TabIndex = 7;
             this.EnregistrerValue.Text = "Enregistrer";
             this.EnregistrerValue.UseVisualStyleBackColor = true;
+            this.EnregistrerValue.Click += new System.EventHandler(this.EnregistrerValue_Click);
+            // 
+            // NombreDeNuitValue
+            // 
+            this.NombreDeNuitValue.Location = new System.Drawing.Point(163, 155);
+            this.NombreDeNuitValue.Name = "NombreDeNuitValue";
+            this.NombreDeNuitValue.Size = new System.Drawing.Size(100, 22);
+            this.NombreDeNuitValue.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 16);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Chambre";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.NombreDeNuitValue);
             this.Controls.Add(this.EnregistrerValue);
-            this.Controls.Add(this.NombreNuitValue);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DateTXT);
@@ -120,8 +132,9 @@
         private System.Windows.Forms.Label DateTXT;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox NombreNuitValue;
         private System.Windows.Forms.Button EnregistrerValue;
+        private System.Windows.Forms.TextBox NombreDeNuitValue;
+        private System.Windows.Forms.Label label1;
     }
 }
 

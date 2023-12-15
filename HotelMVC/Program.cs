@@ -17,6 +17,16 @@ namespace HotelMVC
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            Model model = new Model();
+            View view = new View();
+            Controller controller = new Controller();
+
+            controller.Model = model;
+            controller.View = view;
+
+            model.Controller = controller;
+            view.Controller = controller;
         }
     }
 }
