@@ -14,6 +14,10 @@ namespace HotelMVC
         public BookARoom View { get => _view; set => _view = value; }
         public Model Model { get => _model; set => _model = value; }
 
-
+        public void newBooking(Booking booking)
+        {
+            Console.WriteLine("a");
+            Model.SaveBooking(booking);
+        }
     }
 }

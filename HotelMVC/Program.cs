@@ -16,7 +16,6 @@ namespace HotelMVC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BookARoom());
 
             Model model = new Model();
             BookARoom view = new BookARoom();
@@ -27,6 +26,8 @@ namespace HotelMVC
 
             model.Controller = controller;
             view.Controller = controller;
+
+            Application.Run(view);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace HotelMVC
             booking.Chambre = ChambreValue.Text;
             booking.DateArivee = DateTimeValue.Text;
 
-
+            Controller.newBooking(booking);
     
         }
 
