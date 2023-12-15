@@ -34,9 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.EnregistrerValue = new System.Windows.Forms.Button();
-            this.NombreDeNuitValue = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ChambreValue = new System.Windows.Forms.TextBox();
+            this.NombreDeNuitValue = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.NombreDeNuitValue)).BeginInit();
             this.SuspendLayout();
             // 
             // DateTimeValue
@@ -90,13 +91,6 @@
             this.EnregistrerValue.UseVisualStyleBackColor = true;
             this.EnregistrerValue.Click += new System.EventHandler(this.EnregistrerValue_Click);
             // 
-            // NombreDeNuitValue
-            // 
-            this.NombreDeNuitValue.Location = new System.Drawing.Point(163, 155);
-            this.NombreDeNuitValue.Name = "NombreDeNuitValue";
-            this.NombreDeNuitValue.Size = new System.Drawing.Size(100, 22);
-            this.NombreDeNuitValue.TabIndex = 8;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -113,22 +107,30 @@
             this.ChambreValue.Size = new System.Drawing.Size(100, 22);
             this.ChambreValue.TabIndex = 10;
             // 
-            // Form1
+            // NombreDeNuitValue
+            // 
+            this.NombreDeNuitValue.Location = new System.Drawing.Point(163, 155);
+            this.NombreDeNuitValue.Name = "NombreDeNuitValue";
+            this.NombreDeNuitValue.Size = new System.Drawing.Size(120, 22);
+            this.NombreDeNuitValue.TabIndex = 11;
+            // 
+            // BookARoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.NombreDeNuitValue);
             this.Controls.Add(this.ChambreValue);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.NombreDeNuitValue);
             this.Controls.Add(this.EnregistrerValue);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DateTXT);
             this.Controls.Add(this.RemarqueValue);
             this.Controls.Add(this.DateTimeValue);
-            this.Name = "Form1";
+            this.Name = "BookARoom";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.NombreDeNuitValue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,9 +144,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button EnregistrerValue;
-        private System.Windows.Forms.TextBox NombreDeNuitValue;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ChambreValue;
+        private System.Windows.Forms.NumericUpDown NombreDeNuitValue;
     }
 }
 

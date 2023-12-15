@@ -16,9 +16,10 @@ namespace HotelMVC
         {
             string remaque = booking.Remarque;
             string chambre = booking.Chambre;
-            string date = booking.DateArivee;
-            string nuit = booking.NuitHotel;
-            File.WriteAllText("Booking.txt", remaque + " " + chambre + " " + date + " " + nuit);
+            DateTime date = booking.DateArivee;
+            int nuit = booking.NuitHotel;
+
+            File.WriteAllText("Booking.txt", "Chambre: " + chambre + " Date d'arrivé: " + date + " Nombre de nuit: " + nuit + " Remarque: " + remaque);
             
         }
     }

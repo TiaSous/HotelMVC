@@ -25,9 +25,9 @@ namespace HotelMVC
             Booking booking = new Booking();
 
             booking.Remarque = RemarqueValue.Text;
-            booking.NuitHotel = NombreDeNuitValue.Text;
+            booking.NuitHotel = (int)NombreDeNuitValue.Value;
             booking.Chambre = ChambreValue.Text;
-            booking.DateArivee = DateTimeValue.Text;
+            booking.DateArivee = DateTimeValue.Value;
 
             Controller.newBooking(booking);
     
