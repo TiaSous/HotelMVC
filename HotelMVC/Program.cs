@@ -16,10 +16,10 @@ namespace HotelMVC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new BookARoom());
 
             Model model = new Model();
-            View view = new View();
+            BookARoom view = new BookARoom();
             Controller controller = new Controller();
 
             controller.Model = model;

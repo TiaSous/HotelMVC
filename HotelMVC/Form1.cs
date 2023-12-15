@@ -10,16 +10,27 @@ using System.Windows.Forms;
 
 namespace HotelMVC
 {
-    public partial class Form1 : Form
+    public partial class BookARoom : Form
     {
-        public Form1()
+        private Controller _controller;
+        public BookARoom()
         {
             InitializeComponent();
         }
 
+        public Controller Controller { get => _controller; set => _controller = value; }
+
         private void EnregistrerValue_Click(object sender, EventArgs e)
         {
             Booking booking = new Booking();
+
+            booking.Remarque = RemarqueValue.Text;
+            booking.NuitHotel = NombreDeNuitValue.Text;
+            booking.Chambre = ChambreValue.Text;
+            booking.DateArivee = DateTimeValue.Text;
+
+
+    
         }
 
     }

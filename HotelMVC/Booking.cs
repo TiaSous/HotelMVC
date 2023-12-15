@@ -10,12 +10,12 @@ namespace HotelMVC
     {
         private string _remarque;
         private string _chambre;
-        private int _nuitHotel;
-        private string _chambreName;
+        private string _nuitHotel;
+        private string _dateArivee;
 
         public string Remarque { get => _remarque; set => _remarque = value; }
         public string Chambre { get => _chambre; set => _chambre = value; }
-        public int NuitHotel { get => _nuitHotel; set => _nuitHotel = value; }
-        public string ChambreName { get => _chambreName; set => _chambreName = value; }
+        public string NuitHotel { get => _nuitHotel; set => _nuitHotel = value; }
+        public string DateArivee { get => _dateArivee; set => _dateArivee = value; }
     }
 }

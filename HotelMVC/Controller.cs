@@ -9,9 +9,11 @@ namespace HotelMVC
     public class Controller
     {
         private Model _model;
-        private View _view;
+        private BookARoom _view;
 
-        public View View { get => _view; set => _view = value; }
+        public BookARoom View { get => _view; set => _view = value; }
         public Model Model { get => _model; set => _model = value; }
+
+
     }
 }

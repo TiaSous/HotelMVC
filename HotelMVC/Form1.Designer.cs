@@ -1,6 +1,6 @@
 ﻿namespace HotelMVC
 {
-    partial class Form1
+    partial class BookARoom
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -36,6 +36,7 @@
             this.EnregistrerValue = new System.Windows.Forms.Button();
             this.NombreDeNuitValue = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ChambreValue = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // DateTimeValue
@@ -105,11 +106,19 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Chambre";
             // 
+            // ChambreValue
+            // 
+            this.ChambreValue.Location = new System.Drawing.Point(163, 51);
+            this.ChambreValue.Name = "ChambreValue";
+            this.ChambreValue.Size = new System.Drawing.Size(100, 22);
+            this.ChambreValue.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ChambreValue);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NombreDeNuitValue);
             this.Controls.Add(this.EnregistrerValue);
@@ -135,6 +144,7 @@
         private System.Windows.Forms.Button EnregistrerValue;
         private System.Windows.Forms.TextBox NombreDeNuitValue;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox ChambreValue;
     }
 }
 
